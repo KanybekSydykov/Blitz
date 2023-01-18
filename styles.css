@@ -1,0 +1,429 @@
+:root {
+  --main-text: #474747;
+  --secondary-text: #bfbfbf;
+  --secondary-bg: #f6f6f6;
+  --footer-text: #9b9b9b;
+  --cards-bg: #ededed;
+  --slider-bg: linear-gradient(
+    90deg,
+    rgba(148, 148, 148, 1) 0%,
+    rgba(204, 204, 204, 1) 29%,
+    rgba(222, 222, 222, 1) 52%,
+    rgba(196, 196, 196, 1) 75%,
+    rgba(167, 167, 167, 1) 100%
+  );
+}
+body,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--main-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Economica", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 1em;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0.5em 0;
+  line-height: 1.3;
+}
+
+.fixed-width {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/*==============================
+Header
+============================*/
+
+.page-header {
+  border-top: 5px solid #ebebeb;
+  padding-bottom: 2em;
+  height: a;
+}
+
+.page-header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.page-header .page-logo {
+  font-family: "Pacifico", cursive;
+  font-size: 3.5em;
+  width: 100%;
+  display: inline-flex;
+}
+
+.page-header nav {
+  display: flex;
+  width: 100%;
+  font-family: "Economica", sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-item{
+    cursor:pointer
+}
+
+.nav-link {
+  font-weight: bold;
+  font-style: italic;
+  color: gray !important;
+}
+
+.nav-link em{
+    color: black;
+}
+
+.page-header nav li {
+  margin-right: 3em;
+  padding-top: 3em;
+}
+
+.page-header nav li:last-child {
+  margin-right: 0;
+}
+
+.page-header nav li em {
+  display: block;
+  font-size: 1.6em;
+  font-style: normal;
+}
+
+/* FOOTER */
+
+.page-footer {
+  background: var(--secondary-bg);
+  color: var(--footer-text);
+  height: 70px;
+  font-style: 1em;
+}
+
+.page-footer:before {
+  content: "";
+  display: block;
+  height: 5px;
+  background: url(../assets/pattern.png) left top repeat-x;
+}
+
+.page-footer-content {
+  padding: 1em 0;
+}
+
+/*==========
+    SLIDER
+    ==========*/
+
+.carousel-indicators {
+  left: initial;
+  margin-right: 5%;
+}
+
+.carousel-indicators button[type="button"] {
+  height: 11px;
+  width: 25px;
+}
+
+.arrow-up {
+  position: relative;
+}
+
+.arrow-up:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 50%;
+  border: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.carousel-item img {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.8);
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.carousel-caption h5 {
+  font-size: 1.8em;
+}
+/*=======
+    SLIDER END
+    =======*/
+
+/* Main Visual START    */
+
+.main-visual-text {
+  background: var(--slider-bg);
+}
+
+.claims__card {
+  background-color: #fff;
+  border: 0;
+  width: 32%;
+}
+
+.card__link {
+  border-radius: 5px;
+}
+
+.card__link:active {
+  border: 0;
+}
+
+.claims__card svg {
+  width: 100%;
+  height: 100%;
+  animation: svg 10s linear infinite;
+}
+
+@keyframes svg {
+    0%{
+        color: gray;
+    }
+
+    50%{
+        color: goldenrod;
+    }
+    100%{
+        color: #474747;
+    }
+}
+
+.card__link svg {
+  width: 12px;
+  height: 12px;
+}
+
+
+
+/* Portfolio */
+
+.portfolio__title .title__wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.portfolio__title h2 {
+  display: inline;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.portfolio__title:before {
+  content: " ";
+  width: 100%;
+  height: 30px;
+  display: block;
+  background: url(../assets/pattern.png) left top repeat-x;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card {
+  border: 0;
+}
+.card:hover {
+  box-shadow: 0px -4px 19px 2px rgba(0, 0, 0, 0.84);
+  -webkit-box-shadow: 0px -4px 19px 2px rgba(0, 0, 0, 0.84);
+  -moz-box-shadow: 0px -4px 19px 2px rgba(0, 0, 0, 0.84);
+  transition: all 0.7s ease-out;
+  scale: 1.02;
+}
+
+.btnAnimation {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.gradient-background {
+    background: linear-gradient(102deg,#FFF,#000,#474747,#9c9c9c);
+    background-size: 360% 360%;
+    animation:btnAnimation 36s ease infinite;
+    transition: all 1s ease;
+  }
+
+
+
+/* Animation */
+.cards__container {
+    padding-top: 3em;
+    background: linear-gradient(324deg, #fff, #e6e0e0);
+    background-size: 400% 400%;
+    animation: portofolioBG 10s ease infinite;
+  }
+
+  @keyframes portofolioBG {
+    0% {
+      background-position: 51% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 51% 0%;
+    }
+  }
+
+
+
+@keyframes btnAnimation {
+  0% {
+    background-position: 100% 10%;
+  }
+
+  10%{
+    background-position: 0% 50%;
+    color: gold;
+    fill: gold;
+  }
+
+  50%{
+    background-position: 100% 50%;
+    color:goldenrod;
+    fill: goldenrod;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    color: black;
+    fill: black;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 940px) {
+
+    .offcanvas{
+        width: 50% !important;
+    }
+
+    .nav-item{
+        padding: 0 !important;
+        margin: 0 !important;
+        border-bottom: 2px solid white;
+        width: 100%;
+        color: gray;
+    }
+
+    .nav-item em{
+        color: white;
+    }
+
+    .nav-item .active{
+        color: white !important;
+    }
+
+
+    .nav-link:hover{
+        color: white;
+    }
+    
+    .navbar-toggler:focus {
+             box-shadow:none;
+    }
+    
+  .fixed-width {
+    width: 100%;
+  }
+
+  .claims__card {
+    width: 100%;
+    padding: 15px 25px;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+
+  .portfolio__title{
+    padding-top: 3rem;
+  }
+
+  .portfolio__title h2 {
+    background-color: transparent;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    animation: ColorText 20s ease infinite reverse;
+  }
+
+  .portfolio__title .title__wrapper {
+    top: 43px;
+  }
+  .claims_card_middle {
+    background: #e6e0e0;
+  }
+
+  /* Animation */
+
+ 
+
+  @keyframes ColorText {
+    0% {
+      color: #fff;
+    }
+    50% {
+      color: #e6e0e0;
+    }
+    100% {
+      color: #000;
+    }
+  }
+}
