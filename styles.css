@@ -242,6 +242,10 @@ Header
   height: 12px;
 }
 
+.claims__card,.card{
+  cursor:pointer;
+}
+
 
 
 /* Portfolio */
