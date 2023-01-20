@@ -205,6 +205,7 @@ Header
 }
 
 .claims__card {
+    cursor:pointer;
   background-color: #fff;
   border: 0;
   width: 32%;
@@ -242,10 +243,6 @@ Header
   height: 12px;
 }
 
-.claims__card,.card{
-  cursor:pointer;
-}
-
 
 
 /* Portfolio */
@@ -279,6 +276,7 @@ Header
 }
 
 .card {
+    cursor:pointer;
   border: 0;
 }
 .card:hover {
